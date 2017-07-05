@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Madeleine Hill</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,min-scale=1,max-scale=1,user-scalable=no">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="narrow.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 500px)" href="wide.css">
+  </head>
+  <body>
+    <header>
+      <div class='navWrapper'>
+	<nav class='nav'>
+	  <ul id='menu'>
+	    <li class='active'><a href="#top">TOP</a></li>
+	    <li><a href="#about">ABOUT</a></li>
+	    <li><a href="#education">EDUCATION</a></li>
+	    <li><a href="#teaching">TEACHING</a></li>
+	    <li><a href="#gallery">GALLERY</a></li>
+	  </ul>
+	</nav>
+	<nav class="nav2">
+	  <ul id='menu2'>
+	    <li onclick='showHide();'>MENU</li>
+	  </ul>
+	</nav>
+	<div class='contact'>
+	  <a href='mailto:hillm9@math.mcmaster.ca'>
+	    <img id='mail' src='images/email.png' alt='Mail Icon'>
+	  </a>
+	</div>
+	<div id="menuContent" style='display:none;'>
+	  <a class='active' href="#top">TOP</a><br>
+	  <a href="#about">ABOUT</a><br>
+	  <a href="#education">EDUCATION</a><br>
+	  <a href="#teaching">TEACHING</a><br>
+	  <a href="#gallery">GALLERY</a><br>
+	</div>
+      </div>
+    </header>
+
+    <div class='content'> 
+      <section id='top'></section>
+      <div id='banner'>
+	<div id='bannerText'>
+	  <h1>Madeleine Hill</h1>
+	  <p>
+	    <strong>
+	      <a href='https://ca.linkedin.com/in/madeleine-hill-814244127' target='_blank'>LinkedIn</a> |
+	      <a href='https://github.com/mh11wi' target='_blank'>GitHub</a> |
+	      <a href='http://www.cariboutests.com' target='_blank'>Caribou Contests</a>
+	    </strong>
+	  </p>
+	</div>
+      </div> <!--end banner-->
+
+      <section id='about'>
+	<table>
+	  <tr>
+            <td style='width:70%'>
+	      <h3>About Me</h3>
+	      <p>
+		I am a former grad student that enjoys creating and solving mathematical puzzles. My research at McMaster was in the global dynamics of a predator-prey model in a chemostat. Specifically, I performed asymptotic and bifurcation analysis on this model with a Holling Type II predatory response function. I am now furthering my education in scientific computing and software development.
+	      </p>
+	    </td>
+            <td style='text-align:right'>
+	      <img id='me' src='images/me.jpg' alt='Photo of Me'>
+	    </td>
+	  </tr>
+	</table>
+      </section> <!--end about-->
+
+      <section id='education'>
+	<table>
+	  <tr>
+	    <td colspan="2">
+              <h3>Education</h3>
+	    </td>
+	  </tr>
+	  <tr>
+            <td>
+	      <img id='mohawk' src='images/mohawk.jpg' alt='Mohawk Logo'>
+	    </td>
+            <td>
+	      <strong>Mohawk College</strong>
+	      <br>Advanced Diploma Candidate, Software Development
+	      <br>2016 - present
+	    </td>
+	  </tr>
+	  <tr>
+            <td>
+	      <img id='mac' src='images/mcmaster.jpg' alt='McMaster Logo'>
+	    </td>
+            <td>
+	      <strong>McMaster University</strong>
+	      <br>Master of Science, Mathematics
+	      <br>Supervisor: <a href='https://ms.mcmaster.ca/wolkowic/wordpress/' target='_blank'> Gail Wolkowicz</a>
+	      <br>2015 - 2016
+	    </td>
+	  </tr>
+	  <tr>
+            <td>
+	      <img id='brock' src='images/brock.jpg' alt='Brock Logo'>
+	    </td>
+            <td>
+	      <strong>Brock University</strong>
+	      <br>Honours B.Sc., Math Integrated with Computers and Applications
+	      <br>Concentration in Pure Mathematics
+	      <br>2011 - 2015
+	    </td>
+	  </tr>
+	</table>
+      </section> <!--end education-->
+
+      <section id='teaching'>
+	<table>
+	  <tr>
+            <td style='width:75%'>
+              <h3>Teaching Experience</h3>
+              <p>
+		<strong>Teaching Assistant</strong>
+		<br>MATH 1LT3 Winter 2016, McMaster University
+	      </p>
+              <p>
+		<strong>Maple Lab Assistant</strong>
+		<br>MATH 1AA3/1ZB3 Winter 2016, McMaster University
+	      </p>
+              <p>
+		<strong>Maple Lab Assistant</strong>
+		<br>MATH 1A03/1ZA3 Fall 2015, McMaster University
+	      </p>
+              <p>
+		<strong>Math Camp Instructor</strong>
+		<br>Summers 2014 - 2016, Brock University
+	      </p>
+	    </td>
+            <td style='text-align:right'>
+	      <img id='joke' src='images/pizza.jpg' alt='Math Joke Picture'>
+	    </td>
+	  </tr>
+	</table>
+      </section> <!--end teaching-->
+
+      <section id='gallery'>
+        <table>
+	  <tr>
+            <td colspan="3">
+              <h3>G &Delta; L L &Sigma; R &Upsilon;</h3>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td class="arrows">
+	      <div class="leftArrow" onclick="plusDivs(-1)">&#10094;</div>
+            </td>
+	    <td class="slidesContainer">
+              <img class="mySlides" src="images/falls.jpg" alt="Quebec Trip">
+              <img class="mySlides" src="images/cards.jpg" alt="Business Cards">
+              <img class="mySlides" src="images/piday.jpg" alt="Pi Day">
+	    </td>
+	    <td class="arrows">
+              <div class="rightArrow" onclick="plusDivs(1)">&#10095;</div>
+	    </td>
+	  </tr>
+	  <tr>
+            <td id="captionText" colspan="3"></td>
+	  </tr>
+	  <tr>
+	    <td class="dotsContainer" colspan="3">
+              <span class="dots active" onclick="currentDiv(1)">&#9679;</span>
+              <span class="dots" onclick="currentDiv(2)">&#9679;</span>
+              <span class="dots" onclick="currentDiv(3)">&#9679;</span>
+ 	    </td>
+	  </tr>
+	</table>
+      </section> <!--end gallery-->
+    </div> <!--end content-->
+
+    <footer>
+      <div class="vm">
+        <a href="http://www.mcmaster.ca" target="_blank">McMaster University</a> | 1280 Main Street West | Hamilton, Ontario L8S 4L8
+        <br> Image credit: www.uhdwallpapers.org/2014/08/fireworks-above-niagara-falls.html
+      </div>
+    </footer>  
+    <script>
+      //Stops animations until page fully loads
+      window.onload = function() {
+        $("#bannerText").addClass("animation"); 
+      };
+
+      //Toggle Menu button
+      var clicked = false;
+      function showHide() {
+        var menu = document.getElementById('menuContent');
+        if (!clicked) {
+          menu.style.display = 'block';
+          clicked = true;
+        } else {
+          menu.style.display = 'none';
+          clicked = false;
+        }
+      }
+
+      //Disables hover animations for touch devices
+      if (!("ontouchstart" in document.documentElement)) {
+        document.documentElement.className += " no-touch";
+      }
+
+      //Switch active anchor when scrolled to or clicked on
+      $(window).scroll(function() {			
+	if (window.outerWidth > 550) {
+          var h = $('header').height();
+	} else {
+          var h = $('.nav2').height();
+	}
+        var windscroll = $(window).scrollTop();
+        document.getElementById('menuContent').style.display = 'none';
+        clicked = false;
+        $('.content section').each(function(i) {
+          if ($(this).position().top <= windscroll + 1.1*h) {
+	    $('header li.active').removeClass('active');
+            $('header li').eq(i).addClass('active');
+            $('#menuContent a.active').removeClass('active');
+            $('#menuContent a').eq(i).addClass('active'); 
+          }
+        });
+      }).scroll();
+
+      //Smooth scrolling between anchors
+      $(function() {
+	$('a[href*="#"]').click(function() {
+          if (location.hostname == this.hostname) {
+            var target = $(this.hash);
+	    if (target.length) {			
+	      if (window.outerWidth > 490) {
+        	var h = $('header').height()-1;
+	      } else {
+                var h = $('.nav2').height()-1;
+	      }
+              $('html, body').animate({
+                scrollTop: target.offset().top-h
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+
+      //Gallery slideshow
+      var slideIndex = 1;
+      showDivs(slideIndex);
+	
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+	
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dots");
+	var captions = ["Getting soaked at Les Chutes-Montmorency!","Business cards, like a boss","Happy Pi Day!"];
+        if (n > x.length) {
+	  slideIndex = 1;
+	}    
+        if (n < 1) {
+	  slideIndex = x.length;
+	}
+        for (i=0;i<x.length;i++) {
+          x[i].style.display = "none";  
+        }
+        for (i=0;i<dots.length;i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+	document.getElementById("captionText").innerHTML = captions[slideIndex-1];			    
+      }
+	
+    </script>
+  </body>
+</html> 

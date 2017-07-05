@@ -1,0 +1,54 @@
+.nav {
+ display: inline-block;
+ vertical-align: middle;
+}
+
+.nav2 {
+  display: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+ul#menu {
+  margin: 0;   
+  padding-left: 0;
+  margin-left: 10px;
+  margin-left: 2vw;
+}
+
+ul#menu li {
+  display: inline-block;
+  padding: 0 5px;
+  padding: 0 1vw;
+}
+
+ul#menu li.active a {
+  background-color: white;
+  color: #6A0888;
+}
+
+@keyframes ani {
+  from {background-color: #6A0888;color: white;}
+  to {background-color: white;color: #6A0888;}
+}
+
+.no-touch ul#menu li:hover:not(.active) a {
+  animation-name: ani;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.contact {
+  float: right;
+  display: inline-block;
+  margin-right: 10px;
+  margin-right: 2vw;
+}
+
+footer {
+  font-size: 11px;
+  font-size: 1.5vmax;
+}
