@@ -74,6 +74,8 @@ nav li.active > a {
 
 #courses {
     padding-top: 50px;
+    width: 100%;
+    width: 100vw;
 }
 
 #courseTable {
