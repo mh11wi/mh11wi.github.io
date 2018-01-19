@@ -74,6 +74,7 @@ nav li.active > a {
 
 #courses {
     padding-top: 50px;
+    overflow-x: scroll;
 }
 
 #courseTable {
