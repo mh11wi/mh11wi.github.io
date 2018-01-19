@@ -1,0 +1,174 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #6A0888;
+}
+
+h1, h2, nav {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+    outline: 0;
+    color: #6A0888;
+}
+
+hr {
+    max-width: 15em;
+    border-top: solid 0.25em;
+}
+
+.navbar {
+    background-color: #6A0888;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0;
+}
+
+.navbar-toggle:hover, .navbar-toggle:focus {
+    background-color: #840aa9 !important;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    color: white !important;
+}
+
+nav li.active > a {
+    background-color: #6A0888 !important;
+    color: white;
+}
+
+#top {
+    background-image: url("../images/banner.jpg");
+    background-position: 60% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-opacity: 0.5;
+    height: 100%;
+    height: 100vh;
+}
+
+.jumbotron {
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    height: 100%;
+    margin: 0;
+}
+
+#myTitle {
+    display: none;
+}
+
+#about {
+    background-color: #ff9999;
+}
+
+#education, #teaching, #courses {
+    background-color: #D0A9F5;
+}
+
+#courses {
+    padding-top: 50px;
+}
+
+#courseTable {
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#courseTable th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+#portfolio {
+    background-color: #b3ffe6;
+}
+
+#portfolio a:hover {
+    cursor: pointer;
+}
+
+#portfolio img {
+    border: solid 1px black;
+    width: 90%;
+    
+}
+
+.portfolio-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.portfolio-item-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #6A0888;
+}
+
+.portfolio-item:hover .portfolio-item-overlay {
+    opacity: 0.8;
+}
+
+.portfolio-item-caption {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.modal-image {
+    width: 50%;
+}
+
+footer {
+    color: white;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: white;
+}
+
+footer .fa {
+    border-radius: 50%;
+    border: solid 2px white;
+    padding: 0.25em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.top-space {
+    padding-top: 1em;
+}
+
+.bottom-space {
+    padding-bottom: 1em;
+}
+
+.left-space {
+    padding-left: 0.5em;
+}
+
+.vertical-center {
+    min-height: 95%;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+}
