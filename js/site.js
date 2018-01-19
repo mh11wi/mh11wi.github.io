@@ -8,7 +8,9 @@ $(document).ready(function() {
     }
     
     //Title animation
-    $('#myTitle').slideDown(1500);
+    $(window).load(function() {
+    	$('#myTitle').slideDown(1500);
+    });
     
     //Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
