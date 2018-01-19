@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('#courseTable').dataTable({
+	"responsive": true,
         "pageLength": 15,
         "lengthChange": false,
         "searching": true,
