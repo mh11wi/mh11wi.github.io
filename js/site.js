@@ -20,13 +20,14 @@ $(document).ready(function() {
     $('a[href*="#"]').click(function(e) {
 	e.preventDefault();
 	this.blur();
-	$(this).removeClass("active");
 	var target = $(this.hash);
 	if (target.length) {
 	    var h = $('.navbar-header').height();
 	    $('html, body').animate({
 		scrollTop: target.offset().top - h + 1
-	    }, 1000);
+	    }, 1000, function() {
+		$(this).removeClass("active");
+	    });
         }
     });
 
