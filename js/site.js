@@ -18,7 +18,6 @@ $(document).ready(function() {
     
     //Smooth scrolling between anchors
     $('a[href*="#"]').click(function(e) {
-	//e.preventDefault();
 	this.blur();
 	var target = $(this.hash);
 	if (target.length) {
@@ -28,6 +27,7 @@ $(document).ready(function() {
 	    }, 1000, function() {
 		//$(this).removeClass("active");
 	    });
+	    return false;
         }
     });
 
