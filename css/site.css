@@ -167,12 +167,22 @@ footer .fa {
     padding-left: 0.5em;
 }
 
-.vertical-center {
-    min-height: 600px;
-    min-height: 95vh;
-    display: flex;
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms--display: flex;
-    align-items: center;
+.vcenter-parent {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.vcenter-child {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    height: 600px;
+    height: 95vh;
+}
+
+.col-vcenter {
+    display: table-cell;
+    vertical-align: middle;
+    height: 95vh;
 }

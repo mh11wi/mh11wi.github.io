@@ -20,7 +20,7 @@ $(document).ready(function() {
     $('a[href*="#"]').click(function(e) {
 	e.preventDefault();
 	$(this).blur();
-	$(this).on('touchend',function() { $(this).blur() };
+	$(this).on('touchend',function() { $(this).blur() });
 	$('.navbar-collapse').collapse('hide');
 	var target = $(this.hash);
 	if (target.length) {
