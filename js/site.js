@@ -18,7 +18,7 @@ $(document).ready(function() {
     
     //Smooth scrolling between anchors
     $('a[href*="#"]').click(function(e) {
-	e.preventDefault();
+	//e.preventDefault();
 	this.blur();
 	var target = $(this.hash);
 	if (target.length) {
@@ -26,7 +26,7 @@ $(document).ready(function() {
 	    $('html, body').animate({
 		scrollTop: target.offset().top - h + 1
 	    }, 1000, function() {
-		$(this).removeClass("active");
+		//$(this).removeClass("active");
 	    });
         }
     });
