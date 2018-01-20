@@ -19,9 +19,7 @@ $(document).ready(function() {
     //Smooth scrolling between anchors
     $('a[href*="#"]').click(function(e) {
 	e.preventDefault();
-	$(this).blur();
-	$(this).on('touchend',function() { $(this).blur() });
-	$('.navbar-collapse').collapse('hide');
+	this.blur();
 	var target = $(this.hash);
 	if (target.length) {
 	    var h = $('.navbar-header').height();
@@ -29,6 +27,11 @@ $(document).ready(function() {
 		scrollTop: target.offset().top - h + 1
 	    }, 1000);
         }
+    });
+
+    //Collapse menu on scroll
+    $(window).scroll(function() {
+	$('.navbar-collapse').collapse('hide');
     });
     
     //Set year in footer

@@ -17,6 +17,10 @@ a {
     color: #6A0888;
 }
 
+@media (hover: none) {
+    a:hover { color: inherit; }
+}
+
 hr {
     max-width: 15em;
     border-top: solid 0.25em;
