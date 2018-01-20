@@ -19,7 +19,8 @@ $(document).ready(function() {
     //Smooth scrolling between anchors
     $('a[href*="#"]').click(function(e) {
 	e.preventDefault();
-	this.blur();
+	$(this).blur();
+	$(this).on('touchend',function() { $(this).blur() };
 	$('.navbar-collapse').collapse('hide');
 	var target = $(this.hash);
 	if (target.length) {

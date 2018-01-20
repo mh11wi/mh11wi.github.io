@@ -171,5 +171,8 @@ footer .fa {
     min-height: 600px;
     min-height: 95vh;
     display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms--display: flex;
     align-items: center;
 }
