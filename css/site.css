@@ -18,7 +18,7 @@ a {
 }
 
 @media (hover: none) {
-    a:hover { color: inherit; }
+    nav a:hover { color: #9d9d9d; }
 }
 
 hr {
