@@ -168,7 +168,7 @@ footer .fa {
 }
 
 .vertical-center {
-    min-height: 95%;
+    min-height: 600px;
     min-height: 95vh;
     display: flex;
     align-items: center;

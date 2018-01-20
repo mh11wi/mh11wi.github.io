@@ -17,18 +17,16 @@ $(document).ready(function() {
     });
     
     //Smooth scrolling between anchors
-    $('a[href*="#"]').click(function() {
-	$(this).blur();
+    $('a[href*="#"]').click(function(e) {
+	e.preventDefault();
+	this.blur();
 	$('.navbar-collapse').collapse('hide');
-        if (location.hostname == this.hostname) {
-	    var target = $(this.hash);
-	    if (target.length) {
-		var h = $('.navbar-header').height();
-		$('html, body').animate({
-		    scrollTop: target.offset().top - h + 1
-		}, 1000);
-		return false;
-	    }
+	var target = $(this.hash);
+	if (target.length) {
+	    var h = $('.navbar-header').height();
+	    $('html, body').animate({
+		scrollTop: target.offset().top - h + 1
+	    }, 1000);
         }
     });
     
