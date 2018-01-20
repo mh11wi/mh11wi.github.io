@@ -27,7 +27,6 @@ $(document).ready(function() {
 		scrollTop: target.offset().top - h + 1
 	    }, 1000);
         }
-	target.focus();
     });
 
     //Collapse menu on scroll
