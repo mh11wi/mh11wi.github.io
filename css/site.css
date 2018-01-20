@@ -43,10 +43,6 @@ nav li.active > a {
     color: white;
 }
 
-.touch nav > a:hover {
-    color: #9d9d9d;
-}
-
 #top {
     background-image: url("../images/banner.jpg");
     background-position: 60% 0;
