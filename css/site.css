@@ -17,14 +17,8 @@ a {
     color: #6A0888;
 }
 
-a:hover {
-    color: red;
-}
-
-@media (hover: none) {
-    nav a:hover {
-	color: #9d9d9d;
-    }
+.touch nav a:hover {
+    color: #9d9d9d;
 }
 
 hr {

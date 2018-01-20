@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    if ("ontouchstart" in document.documentElement) {
+	document.documentElement.className += " touch";
+    }
+    
     //Page loaded to particular hash
     if (window.location.hash) {
 	var target = $(window.location.hash);
