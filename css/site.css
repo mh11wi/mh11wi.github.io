@@ -17,10 +17,6 @@ a {
     color: #6A0888;
 }
 
-.touch nav a:hover {
-    color: #9d9d9d;
-}
-
 hr {
     max-width: 15em;
     border-top: solid 0.25em;
@@ -45,6 +41,10 @@ hr {
 nav li.active > a {
     background-color: #6A0888 !important;
     color: white;
+}
+
+.touch nav > a:hover {
+    color: #9d9d9d;
 }
 
 #top {

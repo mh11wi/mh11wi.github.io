@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-    if ("ontouchstart" in document.documentElement) {
-	document.documentElement.className += " touch";
+    if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+	document.documentElement.className += " touch"
     }
     
     //Page loaded to particular hash
