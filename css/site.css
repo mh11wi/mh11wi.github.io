@@ -79,6 +79,8 @@ nav li.active > a {
 
 #courses {
     width: 100%;
+    min-height: 600px;
+    min-height: 95vh;
     padding-top: 50px;
     overflow-x: auto;
 }
