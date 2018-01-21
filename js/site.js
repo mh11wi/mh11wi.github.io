@@ -1,3 +1,8 @@
+//Title animation after page (background image) loads
+$(window).on('load', function() {
+    $('#myTitle').slideDown(1500);
+});
+
 $(document).ready(function() {
     
     //Page loaded to particular hash
@@ -6,9 +11,6 @@ $(document).ready(function() {
 	var h = $('.navbar-header').height();
 	$('html, body').scrollTop(target.offset().top - h + 1);
     }
-    
-    //Title animation
-    $('#myTitle').slideDown(1500);
     
     //Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
@@ -25,7 +27,7 @@ $(document).ready(function() {
 	    $('html, body').animate({
 		scrollTop: target.offset().top - h + 1
 	    }, 1000, function() {
-		//$(this).removeClass("active");
+		$(this).removeClass("active");
 	    });
 	    return false;
         }
