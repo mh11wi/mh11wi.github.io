@@ -44,7 +44,7 @@ nav li.active > a {
 }
 
 @media (hover: none) {
-   nav a {
+   nav > a {
       color: #9d9d9d;
    }
 }
