@@ -44,9 +44,9 @@ nav li.active > a {
 }
 
 @media (hover: none) {
-   nav > a {
-      color: #9d9d9d;
-   }
+    nav li:not(.active) > a {
+	color: #9d9d9d !important;
+    }
 }
 
 #top {
