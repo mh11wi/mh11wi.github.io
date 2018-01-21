@@ -26,10 +26,8 @@ $(document).ready(function() {
 	    var h = $('.navbar-header').height();
 	    $('html, body').animate({
 		scrollTop: target.offset().top - h + 1
-	    }, 1000, function() {
-		$(this).removeClass("active");
-	    });
-	    return false;
+	    }, 1000);
+	    e.preventDefault();
         }
     });
 
