@@ -155,7 +155,7 @@ $(document).ready(function() {
 
 	case "math4f90":
 	    name = "Honours Project";
-	    desc = "Independent project in an area of pure or applied mathematics, or mathematics education.<br><br>I computed the infinitessimal symmetries of eight systems of Non-Abelian Laurent ODEs in order to determine their integrability. Supervisor: Dr. Thomas Wolf";
+	    desc = "Independent project in an area of pure or applied mathematics, or mathematics education.<br><br>Under the supervision of Dr. Thomas Wolf, I computed the infinitessimal symmetries (up to degree 12) for eight systems of Non-Abelian Laurent ODEs in order to determine their integrability.";
 	    break;
 
 	case "math3p97":
@@ -239,12 +239,12 @@ $(document).ready(function() {
 	    break;
 
 	case "math2f40":
-	    name = "Mathematics Integrated with Computers and Applcations II";
+	    name = "Math Integrated with Computers and Applications II";
 	    desc = "Theory and application of mathematical models; discrete dynamical systems; time series and their application to the prediction of weather and sunspots; Markov chains; empirical models using interpolation and regression; continuous stochastic models; simulation of normal, exponential and chi-square random variables; queuing models and simulations, use of a computer algebra system.";
 	    break;
 
 	case "math1p40":
-	    name = "Mathematics Integrated with Computers and Applications I";
+	    name = "Math Integrated with Computers and Applications I";
 	    desc = "Exploration of ideas and problems in algebra differential equations and dynamical systems using computers. Topics include number theory, integers mod p, roots of equations, fractals, predator-prey models and the discrete logistic equation for population growth.";
 	    break;
 
