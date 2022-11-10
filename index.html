@@ -43,213 +43,217 @@
       </div>
     </nav>
 
-    <!--Top Banner-->
-    <section id="top" class="vcenter-parent">
-      <div class="jumbotron vcenter-child">
-        <div class="container text-center" id="myTitle">
-          <h1 class="text-uppercase"><strong>Madeleine Hill</strong></h1>
-          <hr>
-          <p class="bigWidth">Full Stack Developer + Nail Polish Enthusiast</p>
-          <p class="smallWidth">Full Stack Developer<br>+<br>Nail Polish Enthusiast</p>
+    <main>
+    
+      <!--Top Banner-->
+      <section id="top" class="vcenter-parent">
+        <div class="jumbotron vcenter-child">
+          <div class="container text-center" id="myTitle">
+            <h1 class="text-uppercase"><strong>Madeleine Hill</strong></h1>
+            <hr>
+            <p class="bigWidth">Full Stack Developer + Nail Polish Enthusiast</p>
+            <p class="smallWidth">Full Stack Developer<br>+<br>Nail Polish Enthusiast</p>
+          </div>
+          <noscript>
+            <style type="text/css">
+              #myTitle { display: inline }
+            </style>
+          </noscript>
         </div>
-        <noscript>
-          <style type="text/css">
-            #myTitle { display: inline }
-          </style>
-        </noscript>
-      </div>
-    </section>
+      </section>
 
-    <!--About Section-->
-    <section id="about" class="vcenter-parent">
-      <div class="container vcenter-child">
-        <div class="col-xs-7 col-xs-offset-1">
-          <div class="col-vcenter">
-            <h2>About Me</h2>
-            <p>
-              I am a former grad student that enjoys creating and solving mathematical puzzles. Differential equations are my jam! My <a href="https://ojs.lib.uwo.ca/index.php/mase/article/view/10842" target="_blank">research</a> at McMaster was in the global dynamics of a predator-prey model in a chemostat. Specifically, I performed asymptotic and bifurcation analysis on this model with a Holling Type II predatory response function. In the past I have also assisted in the research of integrable Non-Abelian Laurent ODEs.
-            </p>
-            <p>
-              In my free time I like to paint my nails, bake, and play video games.
-            </p>
-          </div>
-        </div>
-        <div class="col-xs-4">
-          <div class="col-vcenter">
-            <img class="img-responsive" src='images/me.jpg' alt='Photo of Me'>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Education Section-->
-    <section id="education" class="vcenter-parent">
-      <div class="container vcenter-child">
-        <h2 class="text-center bottom-space">Education</h2>
-        <div class="row bottom-space">
-          <div class="col-xs-3">
-            <img class='img-responsive pull-right' id='mohawk' src='images/mohawk.jpg' alt='Mohawk Logo'>
-          </div>
-          <div class="col-xs-9">
-            <strong>Mohawk College</strong>
-            <br>Diploma, Software Support
-            <br>2016 - 2018
-          </div>
-        </div>
-        <div class="row bottom-space">
-          <div class="col-xs-3">
-            <img class='img-responsive pull-right' id='mac' src='images/mcmaster.jpg' alt='McMaster Logo'>
-          </div>
-          <div class="col-xs-9">
-            <strong>McMaster University</strong>
-            <br>Master of Science, Mathematics
-            <br>Supervisor: <a href='https://ms.mcmaster.ca/wolkowic/wordpress/' target='_blank'> Gail Wolkowicz</a>
-            <br>2015 - 2016
-          </div>
-        </div>
-        <div class="row bottom-space">
-          <div class="col-xs-3">
-            <img class='img-responsive pull-right' id='brock' src='images/brock.jpg' alt='Brock Logo'>
-          </div>
-          <div class="col-xs-9">
-            <strong>Brock University</strong>
-            <br>Honours B.Sc., Math Integrated with Computers and Applications
-            <br>Concentration in Pure Mathematics
-            <br>2011 - 2015
-          </div>
-        </div>
-        <div class="row top-space">
-          <div class="col-xs-11 text-right">
-            <h4><a href="courses.html">See All Courses<i class="fa fa-chevron-right left-space"></i></a></h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Portfolio Section-->
-    <section id="portfolio" class="vcenter-parent">
-      <div class="container vcenter-child">
-        <h2>Portfolio</h2>
-        <div class="row top-space bottom-space">
-          <div class="col-sm-4 col-xs-6">
-            <a onclick="(function() { $('#nail-app-modal').modal('show'); })()">
-              <div class="portfolio-item">
-                <img class="img-thumbnail center-block" src="images/nails.jpg" alt="Nail App">
-                <div class="portfolio-item-overlay">
-                  <div class="portfolio-item-caption text-center">
-                    <h4>Nail Polish App</h4>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4 col-xs-6">
-            <a onclick="(function() { $('#gen-art-modal').modal('show'); })()">
-              <div class="portfolio-item">
-                <img class="img-thumbnail center-block" src="images/gen-art.png" alt="Generative Art">
-                <div class="portfolio-item-overlay">
-                  <div class="portfolio-item-caption text-center">
-                    <h4>Generative Art</h4>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4 col-xs-6">
-            <a onclick="(function() { $('#calcrostic-modal').modal('show'); })()">
-              <div class="portfolio-item">
-                <img class="img-thumbnail center-block" src="images/calcrostic.png" alt="Calcrostic">
-                <div class="portfolio-item-overlay">
-                  <div class="portfolio-item-caption text-center">
-                    <h4>Calcrostic Puzzles</h4>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4 col-xs-6">
-            <a onclick="(function() { $('#floodfill-modal').modal('show'); })()">
-              <div class="portfolio-item">
-                <img class="img-thumbnail center-block" src="images/floodfill.png" alt="Floodfill">
-                <div class="portfolio-item-overlay">
-                  <div class="portfolio-item-caption text-center">
-                    <h4>Floodfill</h4>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4 col-xs-6">
-            <a onclick="(function() { $('#magic-square-modal').modal('show'); })()">
-              <div class="portfolio-item">
-                <img class="img-thumbnail center-block" src="images/magic_square.png" alt="Magic Squares">
-                <div class="portfolio-item-overlay">
-                  <div class="portfolio-item-caption text-center">
-                    <h4>Magic Squares</h4>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4 col-xs-6">
-            <a onclick="(function() { $('#amazebot-modal').modal('show'); })()">
-              <div class="portfolio-item">
-                <img class="img-thumbnail center-block" src="images/amazebot.png" alt="AMazeBot">
-                <div class="portfolio-item-overlay">
-                  <div class="portfolio-item-caption text-center">
-                    <h4>AMazeBot Competition</h4>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Teaching Section-->
-    <section id="teaching" class="vcenter-parent">
-      <div class="container vcenter-child">
-        <div class="row">
-          <div class="col-xs-4 col-xs-offset-1 col-md-3 col-md-offset-2">
-          <div class="col-vcenter">
-            <img class='img-responsive' id='joke' src='images/pizza.jpg' alt='Math Joke Picture'>
-          </div>
-        </div>
-        <div class="col-xs-6">
-          <div class="col-vcenter">
-            <h2 class="bottom-space">Teaching Experience</h2>
+      <!--About Section-->
+      <section id="about" class="vcenter-parent">
+        <div class="container vcenter-child">
+          <div class="col-xs-7 col-xs-offset-1">
+            <div class="col-vcenter">
+              <h2>About Me</h2>
               <p>
-                <strong>Teaching Assistant</strong>
-                <br>MATH 1LT3 Winter 2016, McMaster University
+                I am a former grad student that enjoys creating and solving mathematical puzzles. Differential equations are my jam! My <a href="https://ojs.lib.uwo.ca/index.php/mase/article/view/10842" target="_blank">research</a> at McMaster was in the global dynamics of a predator-prey model in a chemostat. Specifically, I performed asymptotic and bifurcation analysis on this model with a Holling Type II predatory response function. In the past I have also assisted in the research of integrable Non-Abelian Laurent ODEs.
               </p>
               <p>
-                <strong>Maple Lab Assistant</strong>
-                <br>MATH 1AA3/1ZB3 Winter 2016, McMaster University
-              </p>
-              <p>
-                <strong>Maple Lab Assistant</strong>
-                <br>MATH 1A03/1ZA3 Fall 2015, McMaster University
-              </p>
-              <p>
-                <strong>Math Camp Instructor</strong>
-                <br>Summers 2014 - 2017, Brock University
+                In my free time I like to paint my nails, bake, and play video games.
               </p>
             </div>
           </div>
+          <div class="col-xs-4">
+            <div class="col-vcenter">
+              <img class="img-responsive" src='images/me.jpg' alt='Photo of Me'>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!--Education Section-->
+      <section id="education" class="vcenter-parent">
+        <div class="container vcenter-child">
+          <h2 class="text-center bottom-space">Education</h2>
+          <div class="row bottom-space">
+            <div class="col-xs-3">
+              <img class='img-responsive pull-right' id='mohawk' src='images/mohawk.jpg' alt='Mohawk Logo'>
+            </div>
+            <div class="col-xs-9">
+              <strong>Mohawk College</strong>
+              <br>Diploma, Software Support
+              <br>2016 - 2018
+            </div>
+          </div>
+          <div class="row bottom-space">
+            <div class="col-xs-3">
+              <img class='img-responsive pull-right' id='mac' src='images/mcmaster.jpg' alt='McMaster Logo'>
+            </div>
+            <div class="col-xs-9">
+              <strong>McMaster University</strong>
+              <br>Master of Science, Mathematics
+              <br>Supervisor: <a href='https://ms.mcmaster.ca/wolkowic/wordpress/' target='_blank'> Gail Wolkowicz</a>
+              <br>2015 - 2016
+            </div>
+          </div>
+          <div class="row bottom-space">
+            <div class="col-xs-3">
+              <img class='img-responsive pull-right' id='brock' src='images/brock.jpg' alt='Brock Logo'>
+            </div>
+            <div class="col-xs-9">
+              <strong>Brock University</strong>
+              <br>Honours B.Sc., Math Integrated with Computers and Applications
+              <br>Concentration in Pure Mathematics
+              <br>2011 - 2015
+            </div>
+          </div>
+          <div class="row top-space">
+            <div class="col-xs-11 text-right">
+              <h3><a href="courses.html">See All Courses<i class="fa fa-chevron-right left-space"></i></a></h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Portfolio Section-->
+      <section id="portfolio" class="vcenter-parent">
+        <div class="container vcenter-child">
+          <h2>Portfolio</h2>
+          <div class="row top-space bottom-space">
+            <div class="col-sm-4 col-xs-6">
+              <a onclick="(function() { $('#nail-app-modal').modal('show'); })()">
+                <div class="portfolio-item">
+                  <img class="img-thumbnail center-block" src="images/nails.jpg" alt="Nail App">
+                  <div class="portfolio-item-overlay">
+                    <div class="portfolio-item-caption text-center">
+                      <h3>Nail Polish App</h3>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <a onclick="(function() { $('#gen-art-modal').modal('show'); })()">
+                <div class="portfolio-item">
+                  <img class="img-thumbnail center-block" src="images/gen-art.png" alt="Generative Art">
+                  <div class="portfolio-item-overlay">
+                    <div class="portfolio-item-caption text-center">
+                      <h3>Generative Art</h3>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <a onclick="(function() { $('#calcrostic-modal').modal('show'); })()">
+                <div class="portfolio-item">
+                  <img class="img-thumbnail center-block" src="images/calcrostic.png" alt="Calcrostic">
+                  <div class="portfolio-item-overlay">
+                    <div class="portfolio-item-caption text-center">
+                      <h3>Calcrostic Puzzles</h3>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <a onclick="(function() { $('#floodfill-modal').modal('show'); })()">
+                <div class="portfolio-item">
+                  <img class="img-thumbnail center-block" src="images/floodfill.png" alt="Floodfill">
+                  <div class="portfolio-item-overlay">
+                    <div class="portfolio-item-caption text-center">
+                      <h3>Floodfill</h3>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <a onclick="(function() { $('#magic-square-modal').modal('show'); })()">
+                <div class="portfolio-item">
+                  <img class="img-thumbnail center-block" src="images/magic_square.png" alt="Magic Squares">
+                  <div class="portfolio-item-overlay">
+                    <div class="portfolio-item-caption text-center">
+                      <h3>Magic Squares</h3>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <a onclick="(function() { $('#amazebot-modal').modal('show'); })()">
+                <div class="portfolio-item">
+                  <img class="img-thumbnail center-block" src="images/amazebot.png" alt="AMazeBot">
+                  <div class="portfolio-item-overlay">
+                    <div class="portfolio-item-caption text-center">
+                      <h3>AMazeBot Competition</h3>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Teaching Section-->
+      <section id="teaching" class="vcenter-parent">
+        <div class="container vcenter-child">
+          <div class="row">
+            <div class="col-xs-4 col-xs-offset-1 col-md-3 col-md-offset-2">
+            <div class="col-vcenter">
+              <img class='img-responsive' id='joke' src='images/pizza.jpg' alt='Math Joke Picture'>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="col-vcenter">
+              <h2 class="bottom-space">Teaching Experience</h2>
+                <p>
+                  <strong>Teaching Assistant</strong>
+                  <br>MATH 1LT3 Winter 2016, McMaster University
+                </p>
+                <p>
+                  <strong>Maple Lab Assistant</strong>
+                  <br>MATH 1AA3/1ZB3 Winter 2016, McMaster University
+                </p>
+                <p>
+                  <strong>Maple Lab Assistant</strong>
+                  <br>MATH 1A03/1ZA3 Fall 2015, McMaster University
+                </p>
+                <p>
+                  <strong>Math Camp Instructor</strong>
+                  <br>Summers 2014 - 2017, Brock University
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    </main>
 
     <!--Footer-->
     <footer>
       <div class="container-fluid text-center">
         <div class="row top-space">
           <span>
-            <a href="mailto:mh11wi@outlook.com"><i class="fa fa-envelope-o fa-2x"></i></a>
-            <a href="https://ca.linkedin.com/in/madeleine-hill-814244127" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-            <a href="https://github.com/mh11wi" target="_blank"><i class="fa fa fa-github fa-2x"></i></a>
-            <a href="https://twitter.com/mh11wi_tweets" target="_blank"><i class="fa fa fa-twitter fa-2x"></i></a>
+            <a href="mailto:mh11wi@outlook.com" aria-label="Email"><i class="fa fa-envelope-o fa-2x"></i></a>
+            <a href="https://ca.linkedin.com/in/madeleine-hill-814244127" aria-label="LinkedIn" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/mh11wi" aria-label="GitHub" target="_blank"><i class="fa fa fa-github fa-2x"></i></a>
+            <a href="https://twitter.com/mh11wi_tweets" aria-label="Twitter" target="_blank"><i class="fa fa fa-twitter fa-2x"></i></a>
           </span>
         </div>
         <div class="row top-space">
@@ -261,15 +265,15 @@
     <!--Modals-->
     
     <!--Nail App-->
-    <div class="modal fade" id="nail-app-modal" role="dialog">
+    <div class="modal fade" id="nail-app-modal" role="dialog" aria-label="Nail App">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Nail Polish App</h4>
+            <h3 class="modal-title">Nail Polish App</h3>
           </div>
           <div class="modal-body">
-            <img class="modal-image center-block" src="images/nails.jpg">
+            <img class="modal-image center-block" src="images/nails.jpg" alt="Nail App">
             <p class="text-center top-space">For fun, I am working on an application to track my collection of nail polishes and showcase some of my favourite nail art looks.</p>
             <p class="text-center"><a href="https://mh11wi.github.io/NailPolish/">https://mh11wi.github.io/NailPolish/</a></p>
             <p><strong>Status: </strong>On Going</p>
@@ -288,15 +292,15 @@
     </div>
     
     <!--Generative Art-->
-    <div class="modal fade" id="gen-art-modal" role="dialog">
+    <div class="modal fade" id="gen-art-modal" role="dialog" aria-label="Generative Art">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Generative Art</h4>
+            <h3 class="modal-title">Generative Art</h3>
           </div>
           <div class="modal-body">
-            <img class="modal-image center-block" src="images/gen-art.png">
+            <img class="modal-image center-block" src="images/gen-art.png" alt="Generative Art">
             <p class="text-center top-space">I like to create generative art using the <a href="https://github.com/Fojar/Koan" target="_blank">Koan</a> framework developed by a former colleague. He used to host Lunch-and-Learns to share his craft.</p>
             <p><strong>Status: </strong>On Going</p>
             <p><strong>My Roles:</strong></p>
@@ -306,18 +310,18 @@
             </ul>
             <div class="row">
               <div class="col-xs-offset-3 col-xs-2">
-                <a target="_blank" href="images/gen-art-faces.png" class="thumbnail">
-                  <img src="images/gen-art-faces.png">
+                <a target="_blank" href="images/gen-art-faces.png" class="thumbnail" aria-label="Faces Pop Art">
+                  <img src="images/gen-art-faces.png" alt="Faces Pop Art">
                 </a>
               </div>
               <div class="col-xs-2">
-                <a target="_blank" href="images/gen-art-watermarble.png" class="thumbnail">
-                  <img src="images/gen-art-watermarble.png">
+                <a target="_blank" href="images/gen-art-watermarble.png" class="thumbnail" aria-label="Watermarble Art">
+                  <img src="images/gen-art-watermarble.png" alt="Watermarble Art">
                 </a>
               </div>
               <div class="col-xs-2">
-                <a target="_blank" href="images/gen-art-geodes.png" class="thumbnail">
-                  <img src="images/gen-art-geodes.png">
+                <a target="_blank" href="images/gen-art-geodes.png" class="thumbnail" aria-label="Geodes Art">
+                  <img src="images/gen-art-geodes.png" alt="Geodes Art">
                 </a>
               </div>
             </div>
@@ -330,15 +334,15 @@
     </div>
     
     <!--Calcrostic-->
-    <div class="modal fade" id="calcrostic-modal" role="dialog">
+    <div class="modal fade" id="calcrostic-modal" role="dialog" aria-label="Calcrostic">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Calcrostic Puzzles</h4>
+            <h3 class="modal-title">Calcrostic Puzzles</h3>
           </div>
           <div class="modal-body">
-            <img class="modal-image center-block" src="images/calcrostic.png">
+            <img class="modal-image center-block" src="images/calcrostic.png" alt="Calcrostic">
             <p class="text-center top-space">Calcrostics are puzzles I helped create for <a href="https://cariboutests.com/games/calcrostic.php" target="_blank">Caribou Contests</a> that show calculations in a form similar to acrostic word puzzles.</p>
             <p><strong>Status: </strong>Completed</p>
             <p><strong>My Roles:</strong></p>
@@ -356,15 +360,15 @@
     </div>
     
     <!--Floodfill-->
-    <div class="modal fade" id="floodfill-modal" role="dialog">
+    <div class="modal fade" id="floodfill-modal" role="dialog" aria-label="Floodfill">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Floodfill</h4>
+            <h3 class="modal-title">Floodfill</h3>
           </div>
           <div class="modal-body">
-            <img class="modal-image center-block" src="images/floodfill.png">
+            <img class="modal-image center-block" src="images/floodfill.png" alt="Floodfill">
             <p class="text-center top-space">Floodfill is a web game I helped create for <a href="https://cariboutests.com/games/floodfill.php" target="_blank">Caribou Contests</a> as an application of the Four Colour Theorem.</p>
             <p><strong>Status: </strong>Completed</p>
             <p><strong>My Roles:</strong></p>
@@ -382,15 +386,15 @@
     </div>
     
     <!--Magic Squares-->
-    <div class="modal fade" id="magic-square-modal" role="dialog">
+    <div class="modal fade" id="magic-square-modal" role="dialog" aria-label="Magic Squares">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Magic Squares</h4>
+            <h3 class="modal-title">Magic Squares</h3>
           </div>
           <div class="modal-body">
-            <img class="modal-image center-block" src="images/magic_square.png">
+            <img class="modal-image center-block" src="images/magic_square.png" alt="Magic Squares">
             <p class="text-center top-space">Magic Squares are puzzles I helped create for <a href="https://cariboutests.com/games/magic_square.php" target="_blank">Caribou Contests</a> where each row, column, and diagonal have the same sum.</p>
             <p><strong>Status: </strong>Completed</p>
             <p><strong>My Roles:</strong></p>
@@ -408,15 +412,15 @@
     </div>
     
     <!--AMazeBot-->
-    <div class="modal fade" id="amazebot-modal" role="dialog">
+    <div class="modal fade" id="amazebot-modal" role="dialog" aria-label="AMazeBot">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">AMazeBot Competition</h4>
+            <h3 class="modal-title">AMazeBot Competition</h3>
           </div>
           <div class="modal-body">
-            <img class="modal-image center-block" src="images/amazebot.png">
+            <img class="modal-image center-block" src="images/amazebot.png" alt="AMazeBot">
             <p class="text-center top-space">In 2016 I competed in the <a href="http://web.mohawkcollege.ca/events/amazebot/" target="_blank">AMazeBot Competition</a> at Mohawk College. My team's bot was able to solve each of the five selected mazes!</p>
             <p><strong>Status: </strong>Completed</p>
             <p><strong>My Roles:</strong></p>
