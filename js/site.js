@@ -1,8 +1,26 @@
 history.scrollRestoration = "manual";
 
-// Title animation after page (background image) loads
 $(window).on('load', function() {
+  // Title animation after page (background image) loads
   $('#myTitle').slideDown(1500);
+  
+  // Add active class to navbar items on scroll
+  var sections = document.getElementsByTagName("section");
+  var observer = new IntersectionObserver((entries) => {
+    for (entry of entries) {
+      if (entry.isIntersecting) {
+        $('li.active').removeClass('active');
+        const hash = `#${entry.target.id}`;
+        $(`[href="${hash}"]`).parent().addClass('active');
+      }
+    }
+  },
+  {
+    rootMargin: "-50% 0px",
+  });  
+  for (i = 0; i < sections.length; i++) {
+    observer.observe(sections[i]);
+  }
 });
 
 $(document).ready(function() {
@@ -13,12 +31,6 @@ $(document).ready(function() {
     $('html, body').scrollTop(target.offset().top - h + 1);
     history.replaceState({}, document.title, window.location.href.split('#')[0]);
   }
-    
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#myNavbar',
-    offset: $('.navbar-header').height()
-  });
     
   // Smooth scrolling between anchors
   $('a[href*="#"]').click(function(e) {
