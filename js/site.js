@@ -1,6 +1,7 @@
+history.scrollRestoration = "manual";
+
 // Title animation after page (background image) loads
 $(window).on('load', function() {
-  history.scrollRestoration = "manual";
   $('#myTitle').slideDown(1500);
 });
 
