@@ -4,12 +4,13 @@ $(window).on('load', function() {
 });
 
 $(document).ready(function() {
-    
   // Page loaded to particular hash
   if (window.location.hash) {
     var target = $(window.location.hash);
     var h = $('.navbar-header').height();
     $('html, body').scrollTop(target.offset().top - h + 1);
+  } else {
+    $('html, body').scrollTop(0);
   }
     
   // Activate scrollspy to add active class to navbar items on scroll
