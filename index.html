@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Online Portfolio">
     <meta name="author" content="Madeleine Hill">
@@ -134,6 +135,30 @@
           <h2>Portfolio</h2>
           <div class="row top-space bottom-space">
             <div class="col-sm-4 col-xs-6">
+              <a onclick="(function() { $('#sum-disks-modal').modal('show'); })()">
+                <div class="portfolio-item">
+                  <img class="img-thumbnail center-block" src="images/sum-disks.png" alt="Sum Disks">
+                  <div class="portfolio-item-overlay">
+                    <div class="portfolio-item-caption text-center">
+                      <h3>Sum Disks</h3>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <a onclick="(function() { $('#word-disks-modal').modal('show'); })()">
+                <div class="portfolio-item">
+                  <img class="img-thumbnail center-block" src="images/word-disks.png" alt="Word Disks">
+                  <div class="portfolio-item-overlay">
+                    <div class="portfolio-item-caption text-center">
+                      <h3>Word Disks</h3>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6">
               <a onclick="(function() { $('#nail-app-modal').modal('show'); })()">
                 <div class="portfolio-item">
                   <img class="img-thumbnail center-block" src="images/nails.jpg" alt="Nail App">
@@ -158,30 +183,6 @@
               </a>
             </div>
             <div class="col-sm-4 col-xs-6">
-              <a onclick="(function() { $('#calcrostic-modal').modal('show'); })()">
-                <div class="portfolio-item">
-                  <img class="img-thumbnail center-block" src="images/calcrostic.png" alt="Calcrostic">
-                  <div class="portfolio-item-overlay">
-                    <div class="portfolio-item-caption text-center">
-                      <h3>Calcrostic Puzzles</h3>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-4 col-xs-6">
-              <a onclick="(function() { $('#floodfill-modal').modal('show'); })()">
-                <div class="portfolio-item">
-                  <img class="img-thumbnail center-block" src="images/floodfill.png" alt="Floodfill">
-                  <div class="portfolio-item-overlay">
-                    <div class="portfolio-item-caption text-center">
-                      <h3>Floodfill</h3>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-4 col-xs-6">
               <a onclick="(function() { $('#magic-square-modal').modal('show'); })()">
                 <div class="portfolio-item">
                   <img class="img-thumbnail center-block" src="images/magic_square.png" alt="Magic Squares">
@@ -200,6 +201,30 @@
                   <div class="portfolio-item-overlay">
                     <div class="portfolio-item-caption text-center">
                       <h3>AMazeBot Competition</h3>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <a onclick="(function() { $('#calcrostic-modal').modal('show'); })()">
+                <div class="portfolio-item">
+                  <img class="img-thumbnail center-block" src="images/calcrostic.png" alt="Calcrostic">
+                  <div class="portfolio-item-overlay">
+                    <div class="portfolio-item-caption text-center">
+                      <h3>Calcrostic Puzzles</h3>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <a onclick="(function() { $('#floodfill-modal').modal('show'); })()">
+                <div class="portfolio-item">
+                  <img class="img-thumbnail center-block" src="images/floodfill.png" alt="Floodfill">
+                  <div class="portfolio-item-overlay">
+                    <div class="portfolio-item-caption text-center">
+                      <h3>Floodfill</h3>
                     </div>
                   </div>
                 </div>
@@ -264,6 +289,64 @@
 
     <!--Modals-->
     
+    <!--Sum Disks-->
+    <div class="modal fade" id="sum-disks-modal" role="dialog" aria-label="Sum Disks">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">Sum Disks</h3>
+          </div>
+          <div class="modal-body">
+            <img class="modal-image center-block" src="images/sum-disks.png" alt="Sum Disks">
+            <p class="text-center top-space">When I went to <a href="https://www.museumofplay.org/" target="_blank">The Strong National Museum of Play</a> I saw a physical version of this number game and immediately wanted to recreate it.</p>
+            <p class="text-center">
+              <a href="https://mh11wi.github.io/SumDisks/" target="_blank">https://mh11wi.github.io/SumDisks/</a>
+            </p>
+            <p><strong>Status: </strong>Completed (2022)</p>
+            <p><strong>My Roles:</strong></p>
+            <ul>
+              <li>Designed the MUI interface and React components</li>
+              <li>Published my first ever <a href="https://www.npmjs.com/package/react-disks" target="_blank">package</a> to display randomly generated puzzles</li>
+              <li>Developed scoring procedures to check if a puzzle has been fully solved</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close Project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Word Disks-->
+    <div class="modal fade" id="word-disks-modal" role="dialog" aria-label="Nail App">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">Word Disks</h3>
+          </div>
+          <div class="modal-body">
+            <img class="modal-image center-block" src="images/word-disks.png" alt="Word Disks">
+            <p class="text-center top-space">A word game adaption of Sum Disks, where disks of letters can be rotated to form words selected from the <a href="https://www.npmjs.com/package/random-words" target="_blank">random-words</a> package.</p>
+            <p class="text-center">
+              <a href="https://mh11wi.github.io/WordDisks/" target="_blank">https://mh11wi.github.io/WordDisks/</a>
+            </p>
+            <p><strong>Status: </strong>Completed (2022)</p>
+            <p><strong>My Roles:</strong></p>
+            <ul>
+              <li>Designed the MUI interface and react components</li>
+              <li>Published my first ever <a href="https://www.npmjs.com/package/react-disks" target="_blank">package</a> to display randomly generated puzzles</li>
+              <li>Developed scoring procedures to check if a puzzle has been fully solved</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close Project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <!--Nail App-->
     <div class="modal fade" id="nail-app-modal" role="dialog" aria-label="Nail App">
       <div class="modal-dialog">
@@ -275,8 +358,10 @@
           <div class="modal-body">
             <img class="modal-image center-block" src="images/nails.jpg" alt="Nail App">
             <p class="text-center top-space">For fun, I am working on an application to track my collection of nail polishes and showcase some of my favourite nail art looks.</p>
-            <p class="text-center"><a href="https://mh11wi.github.io/NailPolish/">https://mh11wi.github.io/NailPolish/</a></p>
-            <p><strong>Status: </strong>On Going</p>
+            <p class="text-center">
+              <a href="https://mh11wi.github.io/NailPolish/" target="_blank">https://mh11wi.github.io/NailPolish/</a>
+            </p>
+            <p><strong>Status: </strong>On Going (2021 - present)</p>
             <p><strong>My Roles:</strong></p>
             <ul>
               <li>Designing the Bootstrap-Vue app and components</li>
@@ -301,12 +386,12 @@
           </div>
           <div class="modal-body">
             <img class="modal-image center-block" src="images/gen-art.png" alt="Generative Art">
-            <p class="text-center top-space">I like to create generative art using the <a href="https://github.com/Fojar/Koan" target="_blank">Koan</a> framework developed by a former colleague. He used to host Lunch-and-Learns to share his craft.</p>
-            <p><strong>Status: </strong>On Going</p>
+            <p class="text-center top-space">At DigitalEd one of my colleagues used to host Generative Art 'lunch-and-learns'. He shared with us the <a href="https://github.com/Fojar/Koan" target="_blank">Koan</a> framework that he developed to make his own art.</p>
+            <p><strong>Status: </strong>Completed (2019 - 2021)</p>
             <p><strong>My Roles:</strong></p>
             <ul>
-              <li>Learning various generative art techniques and algorithms</li>
-              <li>Writing Kotlin code to create my own pieces, with a degree of randomness</li>
+              <li>Learned various generative art techniques and algorithms</li>
+              <li>Wrote Kotlin code to create my own pieces, with a degree of randomness</li>
             </ul>
             <div class="row">
               <div class="col-xs-offset-3 col-xs-2">
@@ -343,8 +428,8 @@
           </div>
           <div class="modal-body">
             <img class="modal-image center-block" src="images/calcrostic.png" alt="Calcrostic">
-            <p class="text-center top-space">Calcrostics are puzzles I helped create for <a href="https://cariboutests.com/games/calcrostic.php" target="_blank">Caribou Contests</a> that show calculations in a form similar to acrostic word puzzles.</p>
-            <p><strong>Status: </strong>Completed</p>
+            <p class="text-center top-space"><a href="https://cariboutests.com/games/calcrostic.php" target="_blank">Calcrostics</a> are puzzles I helped create for Caribou Contests that show calculations in a form similar to acrostic word puzzles.</p>
+            <p><strong>Status: </strong>Completed (2016)</p>
             <p><strong>My Roles:</strong></p>
             <ul>
               <li>Designed the interface which loads a puzzle from the database and formats its equations inside user-interactable textboxes</li>
@@ -369,8 +454,8 @@
           </div>
           <div class="modal-body">
             <img class="modal-image center-block" src="images/floodfill.png" alt="Floodfill">
-            <p class="text-center top-space">Floodfill is a web game I helped create for <a href="https://cariboutests.com/games/floodfill.php" target="_blank">Caribou Contests</a> as an application of the Four Colour Theorem.</p>
-            <p><strong>Status: </strong>Completed</p>
+            <p class="text-center top-space"><a href="https://cariboutests.com/games/floodfill.php" target="_blank">Floodfill</a> is a web game I helped create for Caribou Contests as an application of the Four Colour Theorem.</p>
+            <p><strong>Status: </strong>Completed (2015)</p>
             <p><strong>My Roles:</strong></p>
             <ul>
               <li>Designed the interface which loads a puzzle from the database and draws its regions onto an HTML5 canvas</li>
@@ -395,8 +480,8 @@
           </div>
           <div class="modal-body">
             <img class="modal-image center-block" src="images/magic_square.png" alt="Magic Squares">
-            <p class="text-center top-space">Magic Squares are puzzles I helped create for <a href="https://cariboutests.com/games/magic_square.php" target="_blank">Caribou Contests</a> where each row, column, and diagonal have the same sum.</p>
-            <p><strong>Status: </strong>Completed</p>
+            <p class="text-center top-space"><a href="https://cariboutests.com/games/magic_square.php" target="_blank">Magic Squares</a> are puzzles I helped create for Caribou Contests where each row, column, and diagonal have the same sum.</p>
+            <p><strong>Status: </strong>Completed (2018)</p>
             <p><strong>My Roles:</strong></p>
             <ul>
               <li>Designed the interface which generates a random puzzle and formats it into a grid of fixed values and user-interactable textboxes</li>
@@ -421,8 +506,8 @@
           </div>
           <div class="modal-body">
             <img class="modal-image center-block" src="images/amazebot.png" alt="AMazeBot">
-            <p class="text-center top-space">In 2016 I competed in the <a href="http://web.mohawkcollege.ca/events/amazebot/" target="_blank">AMazeBot Competition</a> at Mohawk College. My team's bot was able to solve each of the five selected mazes!</p>
-            <p><strong>Status: </strong>Completed</p>
+            <p class="text-center top-space">I competed in the <a href="http://web.mohawkcollege.ca/events/amazebot/" target="_blank">AMazeBot Competition</a> at Mohawk College. My team's bot was able to solve each of the five selected mazes!</p>
+            <p><strong>Status: </strong>Completed (2016)</p>
             <p><strong>My Roles:</strong></p>
             <ul>
               <li>Helped write a Java program to navigate a virtual robot through a maze as efficiently as possible</li>
