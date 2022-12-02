@@ -1,5 +1,6 @@
 // Title animation after page (background image) loads
 $(window).on('load', function() {
+  history.scrollRestoration = "manual";
   $('#myTitle').slideDown(1500);
 });
 
@@ -10,8 +11,6 @@ $(document).ready(function() {
     var h = $('.navbar-header').height();
     $('html, body').scrollTop(target.offset().top - h + 1);
     history.replaceState({}, document.title, window.location.href.split('#')[0]);
-  } else {
-    $('html, body').scrollTop(0);
   }
     
   // Activate scrollspy to add active class to navbar items on scroll
