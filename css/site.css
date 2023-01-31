@@ -46,8 +46,12 @@ hr {
 }
 
 .navbar-brand {
-  font-size: 1.5em;
+  font-size: 1.75em;
   color: white !important;
+}
+
+.navbar {
+  font-size: 0.8em;
 }
 
 nav li.active > a {
@@ -95,11 +99,11 @@ nav li.active > a {
   display: none;
 }
 
-#about {
+#about, #blog {
   background-color: #ff9999;
 }
 
-#education, #teaching, #courses {
+#work, #education, #teaching, #courses {
   background-color: #D0A9F5;
 }
 
@@ -121,7 +125,7 @@ nav li.active > a {
   text-align: center;
 }
 
-#portfolio {
+#portfolio, #research {
   background-color: #b3ffe6;
 }
 
@@ -169,6 +173,12 @@ nav li.active > a {
 
 .modal-image {
   width: 50%;
+}
+
+.publication {
+  display: block;
+  padding: 1em;
+  font-size: 0.9em;
 }
 
 footer {
