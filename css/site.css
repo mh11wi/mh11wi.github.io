@@ -1,4 +1,4 @@
-html, body {
+html, body, main, section {
   width: 100%;
   height: 100%;
 }
@@ -16,6 +16,10 @@ h3 {
   font-size: 18px;
 }
 
+section h2, #courses h1 {
+  padding-bottom: 0.5em;
+}
+
 #courses h1 {
   font-size: 30px;
 }
@@ -27,6 +31,10 @@ h3 {
 
 a {
   color: #6A0888;
+}
+
+a:hover, a:focus {
+  color: #BC0EF1;
 }
 
 hr {
@@ -70,14 +78,12 @@ nav li.active > a {
   background-position: 60% 0;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
   height: 100vh;
 }
 
 .jumbotron {
   background-color: rgba(0,0,0,0.4);
   color: white;
-  height: 100%;
   margin: 0;
 }
 
@@ -103,16 +109,21 @@ nav li.active > a {
   background-color: #ff9999;
 }
 
-#work, #education, #teaching, #courses {
+#work, #education, #teaching {
   background-color: #D0A9F5;
 }
 
+#portfolio, #research {
+  background-color: #b3ffe6;
+}
+
 #courses {
-  width: 100%;
-  min-height: 600px;
-  min-height: 85vh;
+  background-color: #D0A9F5;
   padding-top: 50px;
-  overflow-x: auto;
+}
+
+#courses .vcenter-child {
+  height: 100%
 }
 
 #courseTable {
@@ -125,37 +136,35 @@ nav li.active > a {
   text-align: center;
 }
 
-#portfolio, #research {
-  background-color: #b3ffe6;
-}
-
-#portfolio a:hover {
-  cursor: pointer;
-}
-
-#portfolio img {
-  border: solid 1px black;
-  width: 90%;
+#courseTable td:nth-child(2) {
+  overflow-wrap: anywhere;
 }
 
 .portfolio-item {
   position: relative;
-  width: 100%;
+  width: 90%;
   margin-bottom: 1em;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  box-shadow: 0 0 0.1em rgb(51, 51, 51);
+  border-radius: 4px;
+}
+
+.portfolio-item img {
+  border: 0;
 }
 
 .portfolio-item-overlay {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
   height: 100%;
-  width: 90%;
-  margin-left: 5%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: #6A0888;
+  border-radius: 4px;
 }
 
 .portfolio-item:hover .portfolio-item-overlay {
@@ -171,8 +180,32 @@ nav li.active > a {
   -ms-transform: translate(-50%, -50%);
 }
 
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
 .modal-image {
-  width: 50%;
+  width: 40%;
+}
+
+.panel {
+  background-color: rgb(255, 255, 255, 0.3);
+  box-shadow: 0 0 0.1em rgb(51, 51, 51);
 }
 
 .publication {
@@ -202,10 +235,6 @@ footer .fa {
   padding-top: 1em;
 }
 
-.bottom-space {
-  padding-bottom: 1em;
-}
-
 .left-space {
   padding-left: 0.5em;
 }
@@ -213,19 +242,21 @@ footer .fa {
 .vcenter-parent {
   display: table;
   table-layout: fixed;
-  width: 100%;
 }
 
 .vcenter-child {
   display: table-cell;
   vertical-align: middle;
-  float: none;
-  height: 600px;
-  height: 95vh;
+  padding-bottom: 1em;
 }
 
-.col-vcenter {
-  display: table-cell;
-  vertical-align: middle;
-  height: 95vh;
+.vcenter-row {
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
+
+.vh-100 {
+  height: calc(100vh - 48px);
+}
+

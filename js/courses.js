@@ -4,7 +4,8 @@ $(document).ready(function() {
       "lengthChange": false,
       "searching": true,
       "info": false,
-      "order": [[ 3, "desc" ],[ 0, "asc" ]]
+      "order": [[ 3, "desc" ],[ 0, "asc" ]],
+      "autoWidth": false
   });
     
   $('#course-modal').on('shown.bs.modal', function(e) {

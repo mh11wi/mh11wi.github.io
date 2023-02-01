@@ -62,7 +62,7 @@
     
       <!--Top Banner-->
       <section id="top" class="vcenter-parent">
-        <div class="jumbotron vcenter-child bottom-space">
+        <div class="jumbotron vcenter-child">
           <div class="container text-center" id="myTitle">
             <h1 class="text-uppercase"><strong>Madeleine Hill</strong></h1>
             <hr>
@@ -78,11 +78,11 @@
       </section>
 
       <!--About Section-->
-      <section id="about" class="vcenter-parent">
-        <div class="container vcenter-child bottom-space">
-          <div class="col-xs-8 col-md-7 col-md-offset-1">
-            <div class="col-vcenter">
-              <h2 class="bottom-space">About Me</h2>
+      <section id="about" class="vcenter-parent vh-100">
+        <div class="container vcenter-child">
+          <div class="row vcenter-row">
+            <div class="col-xs-8 col-md-6 col-lg-7 col-md-offset-1">
+              <h2>About Me</h2>
               <p>
                 I am a full stack developer who has had the privilege of working in the EdTech space for over 6 years. It brings me great joy knowing that my contributions have had a positive impact on student success, particularly in STEM subjects, as I am a strong advocate for high-quality math education.
               </p>
@@ -90,9 +90,7 @@
                 I consider myself a 'maker', both personally and professionally. I love when my creations are enjoyed by others! In my free time I like to paint my nails, bake, sew, and play video games. And yes, I code for fun too. Nothing beats the high of solving a problem you were previously stuck on.
               </p>
             </div>
-          </div>
-          <div class="col-xs-4">
-            <div class="col-vcenter">
+            <div class="col-xs-4">
               <img class="img-responsive" src='images/me.jpg' alt='Photo of Me'>
             </div>
           </div>
@@ -100,10 +98,10 @@
       </section>
 
       <!--Work Section-->
-      <section id="work" class="vcenter-parent">
-        <div class="container vcenter-child bottom-space">
-          <h2 class="text-center bottom-space">Work Experience</h2>
-          <div class="row bottom-space">
+      <section id="work" class="vcenter-parent vh-100">
+        <div class="container vcenter-child">
+          <h2 class="text-center">Work Experience</h2>
+          <div class="row top-space">
             <div class="col-xs-3">
               <img class='img-responsive pull-right' id='prodigy' src='images/prodigy.png' alt='Prodigy Logo'>
             </div>
@@ -114,7 +112,7 @@
               <br>February 2022 - September 2022
             </div>
           </div>
-          <div class="row bottom-space">
+          <div class="row top-space">
             <div class="col-xs-3">
               <img class='img-responsive pull-right' id='digitaled' src='images/digitaled.png' alt='DigitalEd Logo'>
             </div>
@@ -125,7 +123,7 @@
               <br>March 2018 - February 2022
             </div>
           </div>
-          <div class="row bottom-space">
+          <div class="row top-space">
             <div class="col-xs-3">
               <img class='img-responsive pull-right' id='caribou' src='images/caribou.png' alt='Caribou Logo'>
             </div>
@@ -140,115 +138,99 @@
       </section>
 
       <!--Portfolio Section-->
-      <section id="portfolio" class="vcenter-parent">
-        <div class="container vcenter-child bottom-space">
-          <h2 class="left-space bottom-space">Portfolio</h2>
+      <section id="portfolio" class="vcenter-parent vh-100">
+        <div class="container vcenter-child">
+          <h2 class="left-space">Portfolio</h2>
           <div class="row">
-            <div class="col-md-3 col-sm-4 col-xs-6">
-              <a onclick="(function() { $('#sum-disks-modal').modal('show'); })()">
-                <div class="portfolio-item">
-                  <img class="img-thumbnail center-block" src="images/sum-disks.png" alt="Sum Disks">
-                  <div class="portfolio-item-overlay">
-                    <div class="portfolio-item-caption text-center">
-                      <h3>Sum Disks</h3>
-                    </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 text-center">
+              <button class="portfolio-item" onclick="(function() { $('#sum-disks-modal').modal('show'); })()">
+                <img class="img-thumbnail center-block" src="images/sum-disks.png" alt="Sum Disks">
+                <div class="portfolio-item-overlay">
+                  <div class="portfolio-item-caption">
+                    <h3>Sum Disks</h3>
                   </div>
                 </div>
-              </a>
+              </button>
             </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-              <a onclick="(function() { $('#word-disks-modal').modal('show'); })()">
-                <div class="portfolio-item">
-                  <img class="img-thumbnail center-block" src="images/word-disks.png" alt="Word Disks">
-                  <div class="portfolio-item-overlay">
-                    <div class="portfolio-item-caption text-center">
-                      <h3>Word Disks</h3>
-                    </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 text-center">
+              <button class="portfolio-item" onclick="(function() { $('#word-disks-modal').modal('show'); })()">
+                <img class="img-thumbnail center-block" src="images/word-disks.png" alt="Word Disks">
+                <div class="portfolio-item-overlay">
+                  <div class="portfolio-item-caption">
+                    <h3>Word Disks</h3>
                   </div>
                 </div>
-              </a>
+              </button>
             </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-              <a onclick="(function() { $('#nail-app-modal').modal('show'); })()">
-                <div class="portfolio-item">
-                  <img class="img-thumbnail center-block" src="images/nails.jpg" alt="Nail App">
-                  <div class="portfolio-item-overlay">
-                    <div class="portfolio-item-caption text-center">
-                      <h3>Nail Polish App</h3>
-                    </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 text-center">
+              <button class="portfolio-item" onclick="(function() { $('#nail-app-modal').modal('show'); })()">
+                <img class="img-thumbnail center-block" src="images/nails.jpg" alt="Nail App">
+                <div class="portfolio-item-overlay">
+                  <div class="portfolio-item-caption">
+                    <h3>Nail Polish App</h3>
                   </div>
                 </div>
-              </a>
+              </button>
             </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-              <a onclick="(function() { $('#gen-art-modal').modal('show'); })()">
-                <div class="portfolio-item">
-                  <img class="img-thumbnail center-block" src="images/gen-art.png" alt="Generative Art">
-                  <div class="portfolio-item-overlay">
-                    <div class="portfolio-item-caption text-center">
-                      <h3>Generative Art</h3>
-                    </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 text-center">
+              <button class="portfolio-item" onclick="(function() { $('#gen-art-modal').modal('show'); })()">
+                <img class="img-thumbnail center-block" src="images/gen-art.png" alt="Generative Art">
+                <div class="portfolio-item-overlay">
+                  <div class="portfolio-item-caption">
+                    <h3>Generative Art</h3>
                   </div>
                 </div>
-              </a>
+              </button>
             </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-              <a onclick="(function() { $('#magic-square-modal').modal('show'); })()">
-                <div class="portfolio-item">
-                  <img class="img-thumbnail center-block" src="images/magic_square.png" alt="Magic Squares">
-                  <div class="portfolio-item-overlay">
-                    <div class="portfolio-item-caption text-center">
-                      <h3>Magic Squares</h3>
-                    </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 text-center">
+              <button class="portfolio-item" onclick="(function() { $('#magic-square-modal').modal('show'); })()">
+                <img class="img-thumbnail center-block" src="images/magic_square.png" alt="Magic Squares">
+                <div class="portfolio-item-overlay">
+                  <div class="portfolio-item-caption">
+                    <h3>Magic Squares</h3>
                   </div>
                 </div>
-              </a>
+              </button>
             </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-              <a onclick="(function() { $('#amazebot-modal').modal('show'); })()">
-                <div class="portfolio-item">
-                  <img class="img-thumbnail center-block" src="images/amazebot.png" alt="AMazeBot">
-                  <div class="portfolio-item-overlay">
-                    <div class="portfolio-item-caption text-center">
-                      <h3>AMazeBot Competition</h3>
-                    </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 text-center">
+              <button class="portfolio-item" onclick="(function() { $('#amazebot-modal').modal('show'); })()">
+                <img class="img-thumbnail center-block" src="images/amazebot.png" alt="AMazeBot">
+                <div class="portfolio-item-overlay">
+                  <div class="portfolio-item-caption">
+                    <h3>AMazeBot Competition</h3>
                   </div>
                 </div>
-              </a>
+              </button>
             </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-              <a onclick="(function() { $('#calcrostic-modal').modal('show'); })()">
-                <div class="portfolio-item">
-                  <img class="img-thumbnail center-block" src="images/calcrostic.png" alt="Calcrostic">
-                  <div class="portfolio-item-overlay">
-                    <div class="portfolio-item-caption text-center">
-                      <h3>Calcrostic Puzzles</h3>
-                    </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 text-center">
+              <button class="portfolio-item" onclick="(function() { $('#calcrostic-modal').modal('show'); })()">
+                <img class="img-thumbnail center-block" src="images/calcrostic.png" alt="Calcrostic">
+                <div class="portfolio-item-overlay">
+                  <div class="portfolio-item-caption">
+                    <h3>Calcrostic Puzzles</h3>
                   </div>
                 </div>
-              </a>
+              </button>
             </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-              <a onclick="(function() { $('#floodfill-modal').modal('show'); })()">
-                <div class="portfolio-item">
-                  <img class="img-thumbnail center-block" src="images/floodfill.png" alt="Floodfill">
-                  <div class="portfolio-item-overlay">
-                    <div class="portfolio-item-caption text-center">
-                      <h3>Floodfill</h3>
-                    </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 text-center">
+              <button class="portfolio-item" onclick="(function() { $('#floodfill-modal').modal('show'); })()">
+                <img class="img-thumbnail center-block" src="images/floodfill.png" alt="Floodfill">
+                <div class="portfolio-item-overlay">
+                  <div class="portfolio-item-caption">
+                    <h3>Floodfill</h3>
                   </div>
                 </div>
-              </a>
+              </button>
             </div>
           </div>
         </div>
       </section>
       
       <!--Education Section-->
-      <section id="education" class="vcenter-parent">
-        <div class="container vcenter-child bottom-space">
-          <h2 class="text-center bottom-space">Education</h2>
-          <div class="row bottom-space">
+      <section id="education" class="vcenter-parent vh-100">
+        <div class="container vcenter-child">
+          <h2 class="text-center">Education</h2>
+          <div class="row top-space">
             <div class="col-xs-3">
               <img class='img-responsive pull-right' id='mohawk' src='images/mohawk.jpg' alt='Mohawk Logo'>
             </div>
@@ -258,7 +240,7 @@
               <br>2016 - 2018
             </div>
           </div>
-          <div class="row bottom-space">
+          <div class="row top-space">
             <div class="col-xs-3">
               <img class='img-responsive pull-right' id='mac' src='images/mcmaster.jpg' alt='McMaster Logo'>
             </div>
@@ -269,7 +251,7 @@
               <br>2015 - 2016
             </div>
           </div>
-          <div class="row bottom-space">
+          <div class="row top-space">
             <div class="col-xs-3">
               <img class='img-responsive pull-right' id='brock' src='images/brock.jpg' alt='Brock Logo'>
             </div>
@@ -289,74 +271,82 @@
       </section>
       
       <!--Blog Section-->
-      <section id="blog" class="vcenter-parent">
-        <div class="container vcenter-child bottom-space">
-          <div class="col-xs-7 col-xs-offset-1">
-            <div class="col-vcenter">
-              <h2 class="bottom-space">Blog</h2>
-              <p>
-                Coming soon!
-              </p>
+      <section id="blog" class="vcenter-parent vh-100">
+        <div class="container vcenter-child">
+          <div class="col-md-10 col-md-offset-1">
+              <h2>Blog</h2>
+              <a href="#">
+                <div class="panel">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-xs-10">
+                        <p><strong>My EdTech Journey (so far!)</strong></p>
+                      </div>
+                      <div class="col-xs-2 text-right">
+                        <i class="fa fa-chevron-right left-space"></i>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 small">
+                        test test test test test test test test test test test test test test test test test test test test test
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
-          </div>
         </div>
       </section>
 
       <!--Teaching Section-->
-      <section id="teaching" class="vcenter-parent">
-        <div class="container vcenter-child bottom-space">
-          <div class="row">
-            <div class="col-xs-4 col-xs-offset-1 col-md-3 col-md-offset-2">
-              <div class="col-vcenter">
-                <img class='img-responsive' id='joke' src='images/pizza.jpg' alt='Math Joke Picture'>
-              </div>
+      <section id="teaching" class="vcenter-parent vh-100">
+        <div class="container vcenter-child">
+          <div class="row vcenter-row">
+            <div class="col-xs-4 col-md-3 col-sm-offset-1 col-md-offset-2">
+               <img class='img-responsive' id='joke' src='images/pizza.jpg' alt='Math Joke Picture'>
             </div>
-            <div class="col-xs-6">
-              <div class="col-vcenter">
-                <h2 class="bottom-space">Teaching Experience</h2>
-                <p>
-                  <strong>Teaching Assistant</strong>
-                  <br>MATH 1LT3 Winter 2016, McMaster University
-                </p>
-                <p>
-                  <strong>Maple Lab Assistant</strong>
-                  <br>MATH 1AA3/1ZB3 Winter 2016, McMaster University
-                </p>
-                <p>
-                  <strong>Maple Lab Assistant</strong>
-                  <br>MATH 1A03/1ZA3 Fall 2015, McMaster University
-                </p>
-                <p>
-                  <strong>Math Camp Instructor</strong>
-                  <br>Summers 2014 - 2017, Brock University
-                </p>
-              </div>
+            <div class="col-xs-8 col-sm-6">
+              <h2>Teaching Experience</h2>
+              <p>
+                <strong>Teaching Assistant</strong>
+                <br>MATH 1LT3 Winter 2016, McMaster University
+              </p>
+              <p>
+                <strong>Maple Lab Assistant</strong>
+                <br>MATH 1AA3/1ZB3 Winter 2016, McMaster University
+              </p>
+              <p>
+                <strong>Maple Lab Assistant</strong>
+                <br>MATH 1A03/1ZA3 Fall 2015, McMaster University
+              </p>
+              <p>
+                <strong>Math Camp Instructor</strong>
+                <br>Summers 2014 - 2017, Brock University
+              </p>
             </div>
           </div>
         </div>
       </section>
       
       <!--Research Section-->
-      <section id="research" class="vcenter-parent">
-        <div class="container vcenter-child bottom-space">
+      <section id="research" class="vcenter-parent vh-100">
+        <div class="container vcenter-child">
           <div class="col-md-offset-1 col-md-10">
-            <div class="col-vcenter">
-              <h2 class="text-center bottom-space">Research</h2>
-              <p>
-                Differential equations were my jam! To this day I still think it is pretty cool being able to model real-life phenomena mathematically. I look back fondly to my university days, analyzing and running simulations to a variety of problems— it is how I got my first taste of coding after all.
-              </p>
-              <ul>
-                <li class="top-space">
-                  At McMaster (2015-2016) my research was in the global dynamics of a predator-prey model in a chemostat. I performed asymptotic and bifurcation analysis on this model with a Holling Type II predatory response function. My grad group's combined efforts were then published a few years later:
-                  <span class="publication">
-                    <a href="https://ojs.lib.uwo.ca/index.php/mase/article/view/10842" target="_blank">Tedra Bolger, Brydon Eastman, Madeleine Hill, and Gail S. K. Wolkowicz (2020) "A Predator-Prey Model in the Chemostat with Holling Type II Response Functions," Mathematics in Applied Sciences and Engineering, Online first, pp. 1-22</a>
-                  </span>
-                </li>
-                <li class="top-space">
-                  At Brock (2014) I also assisted in the research of integrable Non-Abelian Laurent ODEs under the supervision of <a href="https://brocku.ca/mathematics-science/mathematics/directory/thomas-wolf" target="_blank">Dr. Thomas Wolf</a>. I computed the infinitessimal symmetries of these equations up to degree 12.
-                </li>
-              </ul>
-            </div>
+            <h2 class="text-center">Research</h2>
+            <p>
+              Differential equations were my jam! To this day I still think it is pretty cool being able to model real-life phenomena mathematically. I look back fondly to my university days, analyzing and running simulations to a variety of problems— it is how I got my first taste of coding after all.
+            </p>
+            <ul>
+              <li class="top-space">
+                At McMaster (2015-2016) my research was in the global dynamics of a predator-prey model in a chemostat. I performed asymptotic and bifurcation analysis on this model with a Holling Type II predatory response function. My grad group's combined efforts were then published a few years later:
+                <span class="publication">
+                  <a href="https://ojs.lib.uwo.ca/index.php/mase/article/view/10842" target="_blank">Tedra Bolger, Brydon Eastman, Madeleine Hill, and Gail S. K. Wolkowicz (2020) "A Predator-Prey Model in the Chemostat with Holling Type II Response Functions," Mathematics in Applied Sciences and Engineering, Online first, pp. 1-22</a>
+                </span>
+              </li>
+              <li class="top-space">
+                At Brock (2014) I assisted in the research of integrable Non-Abelian Laurent ODEs under the supervision of <a href="https://brocku.ca/mathematics-science/mathematics/directory/thomas-wolf" target="_blank">Thomas Wolf</a>. I computed the infinitessimal symmetries of these equations up to degree 12.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -404,9 +394,6 @@
               <li>Developed methods to randomly generate and score puzzles</li>
             </ul>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close Project</button>
-          </div>
         </div>
       </div>
     </div>
@@ -433,9 +420,6 @@
               <li>Developed methods to randomly generate and score puzzles</li>
             </ul>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close Project</button>
-          </div>
         </div>
       </div>
     </div>
@@ -461,9 +445,6 @@
               <li>Implementing features: browse collection (with search and filtering), compare polishes, view polish with topper, nail art gallery, and a polish guesser game</li>
               <li>Organizing and editing images</li>
             </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close Project</button>
           </div>
         </div>
       </div>
@@ -504,9 +485,6 @@
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close Project</button>
-          </div>
         </div>
       </div>
     </div>
@@ -529,9 +507,6 @@
               <li>Implemented an HTML5 canvas to display when an equation is correct</li>
               <li>Developed scoring procedures to check if a puzzle has been fully solved</li>
             </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close Project</button>
           </div>
         </div>
       </div>
@@ -556,9 +531,6 @@
               <li>Developed scoring procedures to check if a puzzle has been fully solved</li>
             </ul>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close Project</button>
-          </div>
         </div>
       </div>
     </div>
@@ -582,9 +554,6 @@
               <li>Developed scoring procedures to check if a puzzle has been fully solved</li>
             </ul>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close Project</button>
-          </div>
         </div>
       </div>
     </div>
@@ -605,9 +574,6 @@
             <ul>
               <li>Helped write a Java program to navigate a virtual robot through a maze as efficiently as possible</li>
             </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close Project</button>
           </div>
         </div>
       </div>
