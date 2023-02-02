@@ -16,15 +16,15 @@ h3 {
   font-size: 18px;
 }
 
-section h2, #courses h1 {
+section h2, #courses h1, #blog-page h1 {
   padding-bottom: 0.5em;
 }
 
-#courses h1 {
+#courses h1, #blog-page h1 {
   font-size: 30px;
 }
 
-#course-modal h2 {
+#course-modal h2, #blog-page h2 {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
   font-size: 18px;
 }
@@ -62,7 +62,7 @@ hr {
   font-size: 0.8em;
 }
 
-nav li.active > a {
+nav li.active > a, .badge {
   background-color: #6A0888 !important;
   color: white;
 }
@@ -105,7 +105,7 @@ nav li.active > a {
   display: none;
 }
 
-#about, #blog {
+#about, #research {
   background-color: #ff9999;
 }
 
@@ -113,17 +113,13 @@ nav li.active > a {
   background-color: #D0A9F5;
 }
 
-#portfolio, #research {
+#portfolio, #blog {
   background-color: #b3ffe6;
 }
 
-#courses {
+#courses, #blog-page {
   background-color: #D0A9F5;
   padding-top: 50px;
-}
-
-#courses .vcenter-child {
-  height: 100%
 }
 
 #courseTable {
@@ -204,8 +200,12 @@ nav li.active > a {
 }
 
 .panel {
-  background-color: rgb(255, 255, 255, 0.3);
+  background-color: rgb(255, 255, 255, 0.45);
   box-shadow: 0 0 0.1em rgb(51, 51, 51);
+}
+
+.panel:hover, a:focus .panel {
+  background-color: rgb(255, 255, 255, 0.7);
 }
 
 .publication {
