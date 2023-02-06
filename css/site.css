@@ -29,6 +29,12 @@ section h2, #courses h1, #blog-page h1 {
   font-size: 18px;
 }
 
+h2 small {
+  color: rgb(76, 76, 76);
+  vertical-align: middle;
+  margin-left: 0.25em;
+}
+
 a {
   color: #6A0888;
 }
@@ -40,6 +46,12 @@ a:hover, a:focus {
 hr {
   max-width: 15em;
   border-top: solid 0.25em;
+}
+
+time {
+  display: block;
+  margin-top: -0.5em;
+  padding-bottom: 4em;
 }
 
 .navbar {
