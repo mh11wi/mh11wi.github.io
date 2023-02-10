@@ -29,6 +29,10 @@ section h2, #courses h1, #blog-page h1 {
   font-size: 18px;
 }
 
+#blog-page ul {
+  padding-left: 1em;
+}
+
 h2 small {
   color: rgb(76, 76, 76);
   vertical-align: middle;
@@ -51,7 +55,24 @@ hr {
 time {
   display: block;
   margin-top: -0.5em;
-  padding-bottom: 4em;
+  padding-bottom: 3em;
+}
+
+figure {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+}
+
+figure .img-responsive {
+  display: inline !important;
+  border: 1px solid rgb(76, 76, 76);
+}
+
+figcaption {
+  padding-top: 0.5em;
+  font-size: 85%;
+  color: rgb(76, 76, 76);
 }
 
 .navbar {
