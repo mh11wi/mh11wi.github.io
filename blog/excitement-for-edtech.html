@@ -66,9 +66,78 @@
           <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
               <h1>Excitement For EdTech</h1>
-              <time>February 2, 2023</time>
+              <time>February 6, 2023</time>
               <p>
-                TO-DO
+                Whether you're a teacher, student, or just someone passionate about education like myself, it is exciting to see the ways technology is transforming education and shaping the future of learning. From virtual classrooms and online learning platforms, to educational apps and gamification, I believe that technology has the power to enhance education in meaningful ways. I have had the pleasure of working within the EdTech space since 2014, be it in a part-time or full-time capacity. My goal of this blog post is to share that story with you, and to give you a few examples of some of the online educational products out there.
+              </p>
+              <h2 class="top-space">Caribou Contests</h2>
+              <p>
+                During my third year of university, I started working part-time for one of my professors (you can read more on how this came about in my <a href="/blog/how-did-i-get-here.html" target="_blank">previous blog post</a>). He runs an online business, Caribou Contests, with a mission to make math fun! His website offers math learning resources and competitions for students K-12. Six contests are held worldwide per school year — altogether known as the <em>"Caribou Cup"</em> — in a variety of different levels and languages. 
+              </p>
+              <p>
+                What differentiates Caribou Contests from other math contests is that they are designed to be accessible and enjoyable to students of all levels, not just those who excel in mathematics. Each contest features mathematical puzzles rather than strictly knowledge-based questions, as well as interactive questions typically in the form of web games. Questions are graded automatically, and results are available online shortly after the contest period is over.
+              </p>
+              <p>
+                I started at Caribou writing interesting questions and solutions for students in grades 3-12, and arranging them within a given contest. Each contest needed a balance of questions across the different branches of mathematics, and each question needed to be placed at the correct grade level. Over the years, I've also developed the Floodfill, Magic Square and Interactive Calcrostic games, and added the framework necessary for these games to be used in a contest.
+              </p>
+              <div class="row">
+                <figure class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+                  <img src="/images/calcrostic.png" alt="Calcrostic" class="img-responsive center-block" />
+                  <figcaption>A screenshot of an Interactive Calcrostic, as seen on the Caribou Contests games page.</figcaption>
+                </figure>
+              </div>
+              <p>
+                Students had the opportunity to leave feedback after each contest. I always loved reading their comments, especially on the games I helped create! It was just really heart-warming to see how engaged the students were, in mathematics no less. Around the same period of time, my professor also organized summer math camps at Brock University, which I taught at each year. They were only a couple weeks long, but they were always the highlight of my summers. And in doing so, I got the chance to meet some Caribou participants in person, which was really cool!
+              </p>
+              <h2 class="top-space">Möbius</h2>
+              <p>
+                After finishing college in early 2018, I started looking for my first full-time job in web development. I ended up interviewing with a company called Maplesoft, who is best known for the MAPLE computer algebra system — a tool that I used quite a bit in my university days. This role, however, was for their then online learning platform, Möbius (also formerly known as Maple T.A.). It sounded like the perfect opportunity to combine my interests in math, education, and programming! Fortunately, I received a job offer to start there late March; though unexpectedly, I was told that the team responsible for Möbius would be splitting into its own company — DigitalEd — in April. Two signed contracts later, and the next thing I knew, I was moving to Waterloo.
+              </p>
+              <p>
+                DigitalEd sounded like the best of both worlds: a small startup with lots of potential to grow, and yet it had a legacy product with an established customer base. I was impressed with the Möbius platform as a whole — a platform for creating and deploying higher ed STEM courses. Educators have the ability to create or edit a vast library of lessons, assessments, and interactive learning activities, which STEM students can consume at a guided or self-defined pace. What makes Möbius stand out, though, is its world-class math engine, allowing for complex questions and even open-ended mathematical expressions to be graded automatically. The platform also integrates seamlessly into any LMS (learning management system).
+              </p>
+              <div class="row">
+                <figure class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+                  <img src="/images/mobius.png" alt="Mobius" class="img-responsive center-block" />
+                  <figcaption>The Möbius platform; image credit: DigitalEd.</figcaption>
+                </figure>
+              </div>
+              <p>
+                When I first started at DigitalEd, I was mostly fixing bugs. The engineering team worked pretty independently off of a Kanban board, picking up the highest priority tickets one after another. My first solo feature was to integrate a syntax checker into the Equation Editor, which would highlight common function names if they were spelled incorrectly or in the wrong case (e.g. SIN instead of sin).
+              </p>
+              <p>
+                In 2019, not only did DigitalEd move out of the Maplesoft office and into its own space, but the engineering team was also structured into squads. At first there were three squads, each responsible for a different area of the platform, and consisting of 3 developers, 1 QA person and 1 SRE. A more agile process was also introduced with this squad structure, where we would groom <em>"epics"</em> into vertical slices of work called <em>"stories"</em> with a binding set of acceptance criteria. We also took part in the traditional ceremonies like daily standups, story tasking, demos, and retrospectives. I definitely preferred this collaborative approach!
+              </p>
+              <p>
+                My squad's focus was on the gradebook. We completed several features together, including question regrading: if a mistake was found within a question's definition, the instructor could make a new revision of the question fixing the problem, and automatically calculate new grades for any previous responses made to the question (provided the new revision is deemed compatible). My favourite feature that we created, however, was the new activity grading view: a single-page application where instructors can quickly look at an assignment question-by-question, see the responses made by each student one after another, and update grades either individually or in bulk. While the majority of questions in Möbius are graded automatically, there are a couple of question types that require manual grading. In this app, we used special iconography for instructors to easily identify which assignment questions needed to be graded manually and whether grading was complete for each student. I think I preferred this feature because I worked largely on its front-end. It was also my first time using the Vue.js framework, which I ended up enjoying. And my squad was just really in sync on this feature, like we were in a constant state of flow.
+              </p>
+              <p>
+                In 2020, after everyone started working remotely due to the pandemic, and after a few company departures, the three engineering squads were restructured into two slightly larger squads, but now with a lack of focus. The product team still decided which features would be worked on for each release, but would instead assign them to whichever squad was next available. However, we ended up pivoting <strong>a lot</strong>. I also found that the epics my new squad was given were more back-end heavy, which was not my preference. I felt like I was constantly chasing the high I felt working on the activity grading view, but to no avail. 
+              </p>
+              <p>
+                So I tried to take on other projects to keep me motivated. Developers were encouraged to create different cross-functional teams to help alleviate some pain points within the company. I joined (and in 2021, end up leading) the Testing Group, who were responsible for improving our automatic E2E testing framework so that our build pipelines ran faster, the results were more reliable, and QA could track coverage and not repeat the same test cases manually. I also joined the UX Group, who were responsible for researching and providing resources to the company on design principles, user empathy, and accessibility.
+              </p>
+              <h2 class="top-space">Prodigy Math Game</h2>
+              <p>
+                By the end of 2021, I started feeling ready for a change. Maybe it was the hype from "The Great Resignation" or just a lack of satisfaction at the time, but I decided to look for a new opportunity in the new year. I wanted to work for a larger company with a proven track record for career growth, and I wanted to work more so on the front-end rather than the back-end. I spent most nights scouring LinkedIn in my free time, and that is how I found Prodigy Education. 
+              </p>
+              <p>
+                Prodigy's mission is to help every student in the world love learning, and it does so by harnessing the power of game-based learning. They offer two large scale web-based games — Prodigy Math and Prodigy English — for students in grades 1-8 to play and build new skills. Prodigy Math is a fantasy RPG game filled with quests, collectibles, and battles, which players can win by correctly answering math questions. Prodigy English, on the other hand, is a life simulator game where players can create their own custom-built world by correctly answering reading and language questions, in order to gain energy. Both games use an adaptive algorithm to deliver curriculum-aligned questions at the right level to each player, ensuring effective practice. Parents and teachers can also track student progress, and give out rewards for extra motivation.
+              </p>
+              <div class="row">
+                <figure class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                  <img src="/images/prodigy-math.jpg" alt="Prodigy Math Game" class="img-responsive center-block" />
+                  <figcaption>Prodigy Math promo; image credit: Prodigy Education.</figcaption>
+                </figure>
+              </div>
+              <p>
+                At the end of February 2022, I began working for Prodigy. It was a fully remote role in the education domain of the company. My team was responsible for the internal content management system that our education specialists used to create educational content, as well as the student front-end experience interacting with this content in the math game. I got the chance to work with some really inspiring people at Prodigy! My team consisted of 3 other developers, 1 team lead, 3 education specialists, 1 product manager, and 1 designer, but we also worked closely with our ELA counterparts, the technical lead, and the data team.
+              </p>
+              <p>
+                While I was only with Prodigy for a short period of time, I am proud of the work I accomplished there. In Q2, I owned my first feature: equivalent answer rules. For a select set of skills, students now have the ability to choose how they would like to enter rational numbers, be it a decimal, proper/improper fraction, or mixed number, and be marked correctly if that number evaluates to the defined answer. After releasing this change, the student success rate on these skills had increased by over 20%! Afterwards, I took on a variety of smaller projects in Q3, most notably some UI changes to the question interface for the game team's upcoming battle revamp. I also supported our education specialists on their A/B testing initiatives in Optimizely, and created some analytic events to measure different metrics with. Then finally, I improved our E2E tests to meet Cypress best practices and added test coverage for all legacy question types as part of our 'back to school' reliability push.
+              </p>
+              <p>
+                It's been a few months now since my layoff at the end of September. I promise to keep you updated with what I've been up to since then! And while I'm not sure what my next opportunity will be career-wise, I do hope it will be in EdTech, as it will always have my heart.
               </p>
             </div>
             <div class="col-sm-10 col-sm-offset-1">
