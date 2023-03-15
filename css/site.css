@@ -29,8 +29,31 @@ section h2, #courses h1, #blog-page h1 {
   font-size: 18px;
 }
 
-#blog-page ul {
+#blog-page ul, #blog-page ol {
   padding-left: 1em;
+}
+
+#blog-page table {
+  margin: auto;
+  width: 100%;
+}
+
+#blog-page table, #blog-page th, #blog-page td {
+  border: 1px solid rgb(76, 76, 76);
+  border-collapse: collapse;
+}
+
+#blog-page th {
+  text-align: center;
+  padding: 0.5em;
+}
+
+#blog-page td {
+  padding: 0.5em;
+}
+
+#blog-page td ul, #blog-page td ol {
+  margin: 0 0.5em;
 }
 
 h2 small {
