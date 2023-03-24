@@ -16,17 +16,21 @@ h3 {
   font-size: 18px;
 }
 
-section h2, #courses h1, #blog-page h1 {
+section h2, #courses h1, #blog-page h1, #privacy-policy h1 {
   padding-bottom: 0.5em;
 }
 
-#courses h1, #blog-page h1 {
+#courses h1, #blog-page h1, #privacy-policy h1 {
   font-size: 30px;
 }
 
-#course-modal h2, #blog-page h2 {
+#course-modal h2, #blog-page h2, #privacy-policy h2 {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
   font-size: 18px;
+}
+
+#privacy-policy h3 {
+  font-size: 16px;
 }
 
 #blog-page ul, #blog-page ol {
@@ -172,7 +176,7 @@ nav li.active > a, .badge {
   background-color: #b3ffe6;
 }
 
-#courses, #blog-page {
+#courses, #blog-page, #privacy-policy {
   background-color: #D0A9F5;
   padding-top: 50px;
 }
