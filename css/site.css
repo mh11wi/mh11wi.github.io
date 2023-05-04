@@ -101,6 +101,11 @@ figcaption {
   color: rgb(76, 76, 76);
 }
 
+blockquote {
+  font-size: 85%;
+  border-left: 5px solid rgb(76, 76, 76);
+}
+
 .navbar {
   background-color: #6A0888;
   text-transform: uppercase;
