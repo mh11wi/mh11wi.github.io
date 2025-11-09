@@ -3,11 +3,9 @@ User-agent: *
 Disallow: /images/
 Disallow: /js/
 Disallow: /css/
-Disallow: /NailPolish/img/
-Disallow: /NailPolish/js/
-Disallow: /NailPolish/css/
-Disallow: /WordDisks/static/media/
-Disallow: /WordDisks/static/css/
-Disallow: /SumDisks/static/media/
-Disallow: /SumDisks/static/css/
+Disallow: /NailPolish/assets/
+Disallow: /WordDisks/assets/
+Disallow: /SumDisks/assets/
+Disallow: /GradientGuide/assets/
+Disallow: /WatermarbleWitch/assets/
 Sitemap: https://mh11wi.github.io/sitemap.xml
