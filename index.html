@@ -154,6 +154,16 @@
           <h2 class="left-space">Portfolio</h2>
           <div class="row">
             <div class="col-md-3 col-sm-4 col-xs-6 text-center">
+              <button class="portfolio-item" onclick="(function() { $('#gradient-guide-modal').modal('show'); })()">
+                <img class="img-thumbnail center-block" src="images/gradient-guide.png" alt="Gradient Guide">
+                <div class="portfolio-item-overlay">
+                  <div class="portfolio-item-caption">
+                    <h3>Gradient Guide</h3>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 text-center">
               <button class="portfolio-item" onclick="(function() { $('#sum-disks-modal').modal('show'); })()">
                 <img class="img-thumbnail center-block" src="images/sum-disks.png" alt="Sum Disks">
                 <div class="portfolio-item-overlay">
@@ -428,6 +438,33 @@
     </main>
 
     <!--Modals-->
+    
+    <!--Gradient Guide-->
+    <div class="modal fade" id="gradient-guide-modal" role="dialog" aria-label="Gradient Guide">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">Gradient Guide</h3>
+          </div>
+          <div class="modal-body">
+            <img class="modal-image center-block" src="images/gradient-guide.png" alt="Gradient Guide">
+            <p class="text-center top-space">A tool to plan a gradient manicure. Users can choose nail shape, polish colors and the type of gradient that they'd like to create (e.g. linear or radial).</p>
+            <p class="text-center">
+              <a href="https://mh11wi.github.io/GradientGuide/" target="_blank">https://mh11wi.github.io/GradientGuide/</a>
+            </p>
+            <p><strong>Status: </strong>Completed (2025)</p>
+            <p><strong>My Roles:</strong></p>
+            <ul>
+              <li>Designed the MUI interface and React components</li>
+              <li>Developed methods to generate pure CSS gradients based on user input</li>
+              <li>Integrated Google AdSense on the main page</li>
+              <li>Created an embeddable version to render in my Nail Polish App</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <!--Sum Disks-->
     <div class="modal fade" id="sum-disks-modal" role="dialog" aria-label="Sum Disks">
