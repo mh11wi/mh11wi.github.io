@@ -7,5 +7,5 @@ Disallow: /NailPolish/assets/
 Disallow: /WordDisks/assets/
 Disallow: /SumDisks/assets/
 Disallow: /GradientGuide/assets/
-Disallow: /WatermarbleWitch/assets/
+Disallow: /WatermarbleWitchcraft/assets/
 Sitemap: https://mh11wi.github.io/sitemap.xml
